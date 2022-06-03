@@ -1,0 +1,54 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mother {
+    width: 100%;
+    font-size: 20px;
+}
+
+main {
+    float: left;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+aside {
+    text-align: center;
+    width: 300px;
+    float: right;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    background-color: silver;
+    color: white;
+}
+
+table {
+    width: 890px;
+    font-size: 20px;
+}
+
+#tbl th {
+    background-color: silver;
+    font-size: 20px;
+    padding: 10px;
+}
+
+aside button {
+    width: 190px;
+    padding: 8px;
+    margin-top: 7px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
