@@ -22,6 +22,7 @@
     $db='student1';
     $con=mysqli_connect($host,$user,$pass,$db);
     $result=mysqli_query($con,"SELECT * from student");
+    $row=mysqli_fetch_array($result);
     #button variable
     $id='';
     $name='';
@@ -35,7 +36,7 @@
     if(isset($_POST['address'])){
         $address=$_POST['address'];
     }
-    $sqls='';
+
     if(isset($_POST['add'])){
         $sqls =" insert into student value ($id,'$name','$address')";
         mysqli_query($con,$sqls);
@@ -76,7 +77,7 @@
                         <th>الرقم التسلسلى</th>
                     </tr>
 <?php
-while($row=mysqli_fetch_array($result)){
+while($row){
     echo "<tr>";
     
     echo "<td>".$row['address']."</td>";
